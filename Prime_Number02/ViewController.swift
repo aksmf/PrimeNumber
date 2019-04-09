@@ -14,6 +14,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
            
             var isPrime = true
             
+            // 입력 값이 0이거나 음수 일때 처리...
             if number <= 0 {
                 LblA.text = "input correct value!"
                 textA.text = ""
