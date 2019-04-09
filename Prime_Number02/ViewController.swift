@@ -7,11 +7,9 @@ class ViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var LblA: UILabel!
     @IBOutlet weak var textA: UITextField!
     
-    var isPrime = true
-    
     @IBAction func Check(_ sender: Any) {
         
-        // optional binding(Conditional unwraping)을 사용하여 0과 숫자값을 제외함
+        // optional binding(Conditional unwraping)을 사용하여 숫자값을 제외함
         if let number = Int(textA.text!) {
            
             var isPrime = true
@@ -41,7 +39,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
             }
             textA.text = ""
         } else {
-            // 0과 숫자값이 입력됐을때...
+            //숫자값이 입력됐을때...
             print("nil 발생")
             LblA.text = "input numeric value!"
             textA.text = ""
